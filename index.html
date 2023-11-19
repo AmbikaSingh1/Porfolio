@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="head-container">
+            <div class="type-container">
+                <a href="">AMBIKA SINGH</a>
+            </div>
+            <div class="pmenu">
+                <ul>
+                    <li><a href="">+</a></li>
+
+                </ul>
+            </div>
+            <div class="menu-container">
+                
+                
+                <ul class="menu">
+                    <li><a href="#About-holder"> ABOUT </a></li>
+                    <li><a href="#skill"> SKILLS </a></li>
+                    <li><a href=""> PROJECTS </a></li>
+                    <li><a href="#contact-holder"> CONTACTS </a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="image-holder">
+            <img src="images/wen.png">
+
+        </div>
+        <div class="social">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        <section id="About-holder">
+            <article class="content">
+                <h4>Front-ent Developer | Upcoming Java Developer</h4>
+                <h2>About Me</h2>
+                <p>Meet Ambika Singh,a passionate learner who is currently diving into the world of front-end Web work.She is an ambitious Fronte-end developer who is constantly seeking to expand her knowledge and skillset in coding.Ambika has a thirst for knowledge and is always eager to explore new technologies in the fiels of programming.</p>
+                <section class="more-about">
+                    <h2>More About Ambika Singh</h2>
+                    <p>
+                      You'll often find Ambika glued to his computer, typing away on her
+                      keyboard, as she delves into web work. She loves the challenge
+                      of mastering complex coding concepts and is always looking for new ways
+                      to apply what she has learned. Her determination and persistence make her
+                      an excellent learner, and she is always up for a challenge.
+                    </p>
+                    <p>
+                      As a front-end developer, Ambika has a keen eye for detail and takes
+                      great pride in creating visually appealing and user-friendly websites.
+                      she understands the importance of staying on top of the latest
+                      technologies and trends in coding to keep her skills fresh and relevant.
+                    </p>
+                    <p>
+                      Ambika is a highly motivated and passionate front-end developer who
+                      is constantly seeking to expand her knowledge and skillset in coding. she
+                      has a love for Java and enjoys learning new technologies in the field of
+                      programming. Her persistence, attention to detail, and problem-solving
+                      skills make her an excellent learner and an asset to any coding team.
+                    </p>
+
+            </article>
+            <article id="skill">
+                <h2>Skills</h2>
+                <ul>
+                    <li><a href="">Html5</a></li>
+                    <li><a href="">Css3</a></li>
+                    <li><a href="">Javascript</a></li>
+                    <li><a href="">C/C++</a></li>
+                    <li><a href="">Python</a></li>
+                </ul>
+
+            </article>
+        </section>
+       <!--<div class="project-holder">
+            <article class="project">
+               
+            </article>
+
+        </div>-->
+        <div id="contact-holder">
+            <div class="contact">
+                <h4>Get In Touch With Me</h4>
+                <form action="" method="post">
+                    <label for="c-name">
+                        Name:
+                        <input type="text" id="c-name" name="c-name"placeholder="Enter your name">
+                    </label>
+                    <label for="c-email">
+                       E-mail:
+                       <input type="email" id="c-email" name="c-email"placeholder="Enter your email">
+                   </label>
+                   <label for="c-message">
+                       message:
+                       <textarea id="c-message" name="c-message" rows="2"cols="3"placeholder="Enter your message"></textarea>
+                   </label>
+                   <button type="submit">submit</button>
+               </form>  
+            
+
+
+            </div>
+        </div>
+        <footer>
+            <pre>
+                <small>Ambika singh</small>
+                <small>Email:ambikathakur013@gmail.com</small>
+                <small>copyright 2023 &copy;</small>
+            </pre>
+        </footer>
+
+    </div>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>
