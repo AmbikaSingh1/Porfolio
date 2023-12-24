@@ -8,12 +8,12 @@
 }
 .container{
     background-color:white;
-    padding: 0em;
+    padding: 1em;
     margin: 0em;
 }
 .head-container{
     height:3em;
-    background-color:antiquewhite;
+    background-color:white;
     display:flex;
     justify-content:space-between;
 }
@@ -116,7 +116,6 @@
 }
 .content{
     width:90%;
-    background-color: antiquewhite;
     color: black;
 
 }
@@ -169,6 +168,9 @@ form input,form textarea{
     padding:10px;
     margin:5px 0px;
 }
+.btn btn-primary{
+    color:pink;
+}
 form>button[type="submit"]{
     background-color: black;
     color: white;
@@ -178,6 +180,9 @@ form>button[type="submit"]{
 }
 .contact h4{
     text-align: center;
+}
+.m-phone{
+    display: none;
 }
 @media  screen and (max-width:700px){
     .container{
