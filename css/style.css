@@ -6,9 +6,12 @@
     width:100%;
     margin-top: -0.5em;
 }
+.dropdown{
+    display: none;
+}
 .container{
     background-color:white;
-    padding: 1em;
+    padding:1em;
     margin: 0em;
 }
 .head-container{
@@ -76,16 +79,11 @@
     padding: 15px;
     border-radius: 4px;
   }
-  .pmenu ul>li>a{
-    text-decoration: none;
-    color:antiquewhite;
-    
-  }
-  .pmenu ul{
-    list-style-type:none;
-  }
   #myBtn:hover {
     background-color: #555;
+  }
+  .menu{
+    padding-right: 7em;
   }
 .menu-container ul{
     list-style-type: none;
@@ -99,7 +97,7 @@
 }
 .menu-container ul{
     display: flex;
-    flex-direction: row;
+    justify-content:row;
 }
 
  .menu-container ul>li{
@@ -168,9 +166,6 @@ form input,form textarea{
     padding:10px;
     margin:5px 0px;
 }
-.btn btn-primary{
-    color:pink;
-}
 form>button[type="submit"]{
     background-color: black;
     color: white;
@@ -188,6 +183,47 @@ form>button[type="submit"]{
     .container{
         max-width:750px;
     }
+    .dropbtn {
+        background-color:black;
+        color: white;
+        padding:16px;
+        margin-right: 1em;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #297fb964;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color:black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+    
+    
     #About-holder{
         display: flex;
         flex-direction: column;
